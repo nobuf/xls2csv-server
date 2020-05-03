@@ -5,10 +5,14 @@ Call `libreoffice` and `xlsx2csv` via HTTP.
 ## Usage
 
 ```shell
+docker-compose up
+```
+
+```shell
 curl \
     -F "sheet=2" \
     -F "file=@your-awesome-spreadsheet.xls" \
-    -o output.csv
+    -o output.csv \
     http://127.0.0.1:5001/
 ```
 
